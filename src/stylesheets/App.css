@@ -1,0 +1,99 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
+}
+
+#timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(166, 206, 233);
+  height: 22em;
+  width: 40em;
+}
+
+#display {
+  background-color: #79babd;
+  height: 20em;
+  width: 19em;
+}
+
+#settings {
+  background-color: #bdc9c3;
+  height: 20em;
+  width: 18em;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.increment {
+  color: #266942;
+  font-size: 2em;
+  margin: 0 .5em 0 .5em;
+}
+
+.decrement {
+  color: #e02706;
+  font-size: 2em;
+  margin: 0 .5em 0 .5em;
+}
+
+.length {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.label {
+  font-size: 1.5em;
+  margin: 2.2em 0 0 0;
+  padding: 0;
+}
+
+#timer-label {
+  font-size: 2.5em;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+#time-left {
+  font-size: 3.5em;
+  margin: .25em 0 0 0;
+  padding: 0;
+}
+
+#start_stop {
+  font-size: 2.5em;
+  margin: .75em 0 0 0;
+  padding: 0;
+}
+
+#reset {
+  font-size: 2.5em;
+  margin: .75em 0 0 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .App {
+    min-height: 90vh;
+  }
+  #timer {
+    flex-direction: column-reverse;
+    height: 43em;
+    width: 21em;
+  }
+
+  #settings {
+    width: 19em;
+  }
+}
